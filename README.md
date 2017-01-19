@@ -1,5 +1,5 @@
 # Scripts4AlpineLinux
-MIsc scripts for use on Alpine Linux runnig in a VM (i.e. Virtualbox guest)
+Misc scripts for use on Alpine Linux runnig in a VM (i.e. Virtualbox guest)
 
 #jupyter-python-setup.sh
  Install Jupyter and Python Engine for use with following libraries on Alpine Linux 3.5:
@@ -7,7 +7,7 @@ MIsc scripts for use on Alpine Linux runnig in a VM (i.e. Virtualbox guest)
  - Numpy 
  - Scikit-Learn
  - pandas-datareader
- - mapplotlib
+ - matplotlib
  - beautifulsoup4
  
  Usage:
@@ -21,8 +21,9 @@ MIsc scripts for use on Alpine Linux runnig in a VM (i.e. Virtualbox guest)
   >   wget https://raw.githubusercontent.com/nomadhermit/Scripts4AlpineLinux/master/jupyter-python-setup.sh
   >   ash jupyter-python-setup.sh
      
-  7. launch jupyter for remote access run:
+  7. launch jupyter for remote access via:
   >   jupyter notebook --ip 0.0.0.0
      
   8. use a browser and connect to the url and token shown after jupyter launch
+  9. create python2 notebook and confirm desired libraries are working.
 
