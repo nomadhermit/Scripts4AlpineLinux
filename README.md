@@ -13,13 +13,16 @@ MIsc scripts for use on Alpine Linux runnig in a VM (i.e. Virtualbox guest)
  Usage:
  
   1. install Alpine Linux 3.5
-  2. confirm network connectivity (i.e. > ping github.com)
-  3. Run follow:
+  2. eject install media (i.e. cdrom iso)
+  3. reboot
+  4. login
+  5. confirm network connectivity (i.e. > ping github.com)
+  6. Run follow:
   >   wget https://raw.githubusercontent.com/nomadhermit/Scripts4AlpineLinux/master/jupyter-python-setup.sh
   >   ash jupyter-python-setup.sh
      
-  4. launch jupyter for remote access run:
+  7. launch jupyter for remote access run:
   >   jupyter notebook --ip 0.0.0.0
      
-  5. use a browser and connect to the url and token shown after jupyter launch
+  8. use a browser and connect to the url and token shown after jupyter launch
 
