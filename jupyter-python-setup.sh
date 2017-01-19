@@ -10,9 +10,10 @@ if [ -f /etc/alpine-release ]
     then
       if grep -q -i "3.5.0" /etc/alpine-release
         then
-            echo "Alpine Linux 3.5.0 confirmed \n"
+            echo "Alpine Linux 3.5.0 confirmed"
         else 
-            echo "Looks like Alpine Linux, but not the 3.5.0 version tested \n let's see what happens... \n"
+            echo "Looks like Alpine Linux, but not the 3.5.0 version tested"
+            echo "Let's continue and see what happens..."
       fi
     else
       echo  "This does not appear to be Alpine Linux \n"
