@@ -17,7 +17,9 @@ Misc scripts for use on Alpine Linux runnig in a VM (i.e. Virtualbox guest)
   3. reboot
   4. login
   5. confirm network connectivity (i.e. > ping github.com)
-  6. Run follow:
+  6. update wget (default wget does not appear to support https connections)
+  >   apk add -u wget
+  6. Run follow to download and run the script:
   >   wget https://raw.githubusercontent.com/nomadhermit/Scripts4AlpineLinux/master/jupyter-python-setup.sh
   >   
   >   ash jupyter-python-setup.sh
