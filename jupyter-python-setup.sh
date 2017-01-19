@@ -8,7 +8,12 @@ set -e
 
 if [ -f /etc/alpine-release ]
     then
-      echo  "Alpine Linux confirmed"
+      if grep -q -i "3.5.0" /etc/alpine-release
+        then
+            echo "Alpine Linux 3.5.0 confirmed"
+        else 
+            echo "Looks like Alpine Linux, but not the 3.5.0 version tested with"
+      fi
     else
       echo  "This does not appear to be Alpine Linx"
       exit
