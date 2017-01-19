@@ -19,6 +19,7 @@ Misc scripts for use on Alpine Linux runnig in a VM (i.e. Virtualbox guest)
   5. confirm network connectivity (i.e. > ping github.com)
   6. Run follow:
   >   wget https://raw.githubusercontent.com/nomadhermit/Scripts4AlpineLinux/master/jupyter-python-setup.sh
+  >   
   >   ash jupyter-python-setup.sh
      
   7. launch jupyter for remote access via:
