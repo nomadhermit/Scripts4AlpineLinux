@@ -4,6 +4,8 @@
 # for debug change to -x to dryrun w/ execution change to -n
 set -e
 
+# for use on Alpin Linux 3.5
+
 # uncomment community repo
 sed -i '/3.5\/community/s/^#//g' /etc/apk/repositories
 
