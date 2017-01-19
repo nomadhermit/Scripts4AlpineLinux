@@ -4,7 +4,16 @@
 # for debug change to -x to dryrun w/ execution change to -n
 set -e
 
-# for use on Alpin Linux 3.5
+# confirm Alpin Linux 3.5
+
+if [ -f /etc/alpine-release ]
+    then
+      echo  "Alpine Linux confirmed"
+    else
+      echo  "This does not appear to be Alpine Linx"
+      exit
+fi
+
 
 # uncomment community repo
 sed -i '/3.5\/community/s/^#//g' /etc/apk/repositories
