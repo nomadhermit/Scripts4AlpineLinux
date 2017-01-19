@@ -1,7 +1,7 @@
 # /bin/ash
 
 # set shell env to execute...
-# for debug change to -x to dryrun w/ execution change to -n
+# for debug change to -x to dryrun w/o execution change to -n
 set -e
 
 # for use on Alpin Linux 3.5
