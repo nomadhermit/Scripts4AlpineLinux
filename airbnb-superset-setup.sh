@@ -41,9 +41,11 @@ apk add -u python \
  libxml2 \
  libxml2-dev \
  libxslt-dev \
- libxslt
-
- #linux-headers
+ libxslt \
+ linux-headers \
+ libcffi-dev \
+ openssl-dev \
+ cyrus-sasl-dev
 
 # check for xlocale.h and if not exist create symlink to locale.h
 if [ -f /usr/include/xlocale.h ]
@@ -56,12 +58,19 @@ fi
 # insall python apps and libraries
 pip install --upgrade pip
 pip install virtualenv
-pip install pandas
-pip install pandas-datareader
-pip install matplotlib
-pip install beautifulsoup4
-pip install scipy
-pip install lxml
-pip install scikit-learn
-pip install jupyter
-#pip install jupyter_contrib_nbextensions
+
+virtualenv venv
+. ./venv/bin/activate
+
+pip install --upgrade setuptools pip
+
+pip install superset
+
+# next steps
+
+echo '**run the following commands** \n
+fabmanager create-admin --app superset
+superset db upgrade
+superset init
+superset runserver -p 8088
+'
