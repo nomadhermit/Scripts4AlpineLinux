@@ -7,7 +7,7 @@ Misc scripts for use on Alpine Linux runnig in a VM (i.e. Virtualbox guest)
  - Numpy
  - Scikit-Learn
  - pandas-datareader
- - matplotlib
+ - matplotlibiut
  - beautifulsoup4
 
  Usage:
@@ -19,6 +19,7 @@ Misc scripts for use on Alpine Linux runnig in a VM (i.e. Virtualbox guest)
   5. confirm network connectivity (i.e. > ping github.com)
   6. update wget (default wget does not appear to support https connections) with certs
   >   apk add -u wget
+  >
   >   apk add -u ca-certificates
 
   6. Run follow to download and run the script:
