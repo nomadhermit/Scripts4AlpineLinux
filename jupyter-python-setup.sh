@@ -16,7 +16,7 @@ if [ -f /etc/alpine-release ]
             echo "Let's continue and see what happens..."
       fi
     else
-      echo  "This does not appear to be Alpine Linux \n"
+      echo  "This does not appear to be Alpine Linux"
       exit
 fi
 
