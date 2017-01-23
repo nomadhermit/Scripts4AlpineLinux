@@ -1,4 +1,5 @@
-# /bin/ash
+#!/bin/ash
+
 
 # set shell env to execute...
 # for debug change to -x to dryrun w/o execution change to -n
@@ -68,9 +69,12 @@ pip install superset
 
 # next steps
 
-echo '**run the following commands** \n
+echo '
+
+**run the following commands**
 fabmanager create-admin --app superset
 superset db upgrade
+superset load_example
 superset init
 superset runserver -p 8088
 '
