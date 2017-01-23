@@ -29,9 +29,9 @@ sed -i '/3.5\/community/s/^#//g' /etc/apk/repositories
 apk update
 
 # install OS packages
-apk add -u python \
- python-dev \
- py2-pip \
+apk add -u python3 \
+ python3-dev \
+ py3-pip \
  build-base \
  gfortran \
  lapack \
