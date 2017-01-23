@@ -69,14 +69,8 @@ pip install superset
 
 # next steps
 
-echo '
-
-Next Steps:
-
-**run the following commands**
 fabmanager create-admin --app superset
 superset db upgrade
 superset load_example
 superset init
-superset runserver -p 8088
-'
+superset runserver -p 8888
