@@ -60,8 +60,8 @@ fi
 pip install --upgrade pip
 pip install virtualenv
 
-virtualenv venv
-. ./venv/bin/activate
+#virtualenv venv
+#. ./venv/bin/activate
 
 pip install --upgrade setuptools pip
 
@@ -70,6 +70,8 @@ pip install superset
 # next steps
 
 echo '
+
+Next Steps:
 
 **run the following commands**
 fabmanager create-admin --app superset
