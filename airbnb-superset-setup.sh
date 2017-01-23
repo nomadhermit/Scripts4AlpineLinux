@@ -43,7 +43,7 @@ apk add -u python \
  libxslt-dev \
  libxslt \
  linux-headers \
- libcffi-dev \
+ libffi-dev \
  openssl-dev \
  cyrus-sasl-dev
 
