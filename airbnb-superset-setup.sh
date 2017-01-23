@@ -57,15 +57,15 @@ if [ -f /usr/include/xlocale.h ]
 fi
 
 # insall python apps and libraries
-pip install --upgrade pip
-pip install virtualenv
+#pip install --upgrade pip
+#pip install virtualenv
 
 #virtualenv venv
 #. ./venv/bin/activate
 
-pip install --upgrade setuptools pip
+pip3 install --upgrade setuptools pip
 
-pip install superset
+pip3 install superset
 
 # next steps
 
